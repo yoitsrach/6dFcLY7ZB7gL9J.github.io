@@ -1,7 +1,62 @@
 <!doctype html>
-<html>
-<head><title>Rachel French</title></head>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rachel French</title>
+  <meta name="description" content="Rachel French — researcher, problem solver, Android/ADB specialist." />
+  <link rel="icon" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-  <h1>Hello, world! RachelFrench.me is live 🎉</h1>
+  <main class="wrap">
+    <header class="top">
+      <div class="brand">
+        <h1>Rachel <span>French</span></h1>
+        <p class="tag">Problem‑solver • Research • Android/ADB • Advocacy</p>
+      </div>
+      <div class="chip">rachelfrench.me</div>
+    </header>
+
+    <section class="card hero">
+      <p>Hi! I turn messy problems into clean solutions. I’m great at research/OSINT, Android/ADB optimization & troubleshooting, behavior analysis, and persuasive letters/advocacy.</p>
+      <p class="cta">
+        <a class="btn" href="mailto:hello@rachelfrench.me">Email me</a>
+        <a class="btn ghost" href="#services">Services</a>
+      </p>
+    </section>
+
+    <section id="services" class="grid">
+      <div class="card">
+        <h3>What I do</h3>
+        <ul>
+          <li>Advanced research / OSINT & data digging</li>
+          <li>Android/ADB optimization & troubleshooting</li>
+          <li>Persuasive complaints, appeals & advocacy</li>
+          <li>Bug-hunting & logic flaw discovery</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Get in touch</h3>
+        <p>For projects, collaborations, or help, email me:</p>
+        <p><a href="mailto:hello@rachelfrench.me">hello@rachelfrench.me</a></p>
+        <p class="muted small">Don’t have custom email yet? This link will still open your mail app.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Downloads</h3>
+      <ul>
+        <li><a href="adb-guide.pdf">5 Hidden ADB Commands (PDF)</a> <span class="muted">(optional—add later)</span></li>
+      </ul>
+    </section>
+
+    <footer class="foot">
+      <p>© <span id="year"></span> Rachel French • <a href="https://github.com/6dFcLY7ZB7gL9J">GitHub</a></p>
+    </footer>
+  </main>
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
 </body>
 </html>
